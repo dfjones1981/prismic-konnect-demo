@@ -42,14 +42,18 @@ export default class Task extends React.Component {
     if (this.state.doc) {
        console.log(this.state.doc);
         return (
-            <div data-wio-id={this.state.doc.id}>
+            <div className={'content'}>
+              <div className={'cell'} >
             {/* This is how to insert a Rich Text field as plain text */}
             <h1>{PrismicReact.RichText.asText(this.state.doc.data.task_title)}</h1>
             <h2>{PrismicReact.RichText.asText(this.state.doc.data.task_intro)}</h2>
+            <div className={'content-body'}>
             {/* This is how to insert a Rich Text field into your template as html */}
             {PrismicReact.RichText.render(this.state.doc.data.task_body, this.props.prismicCtx.linkResolver)}
 
             <a href={PrismicReact.Link.url(this.state.doc.data.related_links, this.props.prismicCtx.linkResolver)}>See also</a>
+            </div>
+            </div>
           </div>
         );
       } else if (this.state.notFound) {

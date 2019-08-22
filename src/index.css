@@ -2,3 +2,64 @@ body {
   margin: 0;
   padding: 0;
 }
+
+h1, h2, p {
+    
+        line-height: 1.4;
+    margin-top: 0;
+    font-family: sofia_pro,sans-serif;
+    font-style: normal;
+}
+
+h1 {
+    color: #44b2e8;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+     text-transform: uppercase;
+}
+
+h2 {
+  color: #215aa8;
+    font-size: 1.1rem;
+    margin-right: 10px;
+   
+}
+
+ol {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  list-style-type: disc;
+    margin-bottom: 1rem;
+    list-style-position: outside;
+    line-height: 1.2;
+}
+
+li {
+  display: list-item;
+      text-align: -webkit-match-parent;
+}
+
+.content {
+  margin-top: 10px;
+  background-color: #fefefe;
+  border: 1px solid #e6e6e6;
+  padding: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 20px auto;
+  max-width: 66.66667rem;
+}
+
+.cell {
+ flex: 0 0 auto;
+ width: 100%;
+}
+
+.content-body {
+color: #0a0a0a;
+  font-weight: 400;
+    line-height: 1.2;
+font-family: sofia_pro,sans-serif;
+margin-top: 20px;
+}
